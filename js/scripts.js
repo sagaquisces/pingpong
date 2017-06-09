@@ -1,5 +1,18 @@
+// business interface logic
+
+
+
+//user interface logic
 $(document).ready (function() {
   $("form").submit (function() {
-    alert ("ready");
+    event.preventDefault();
+
+    var inputtedNumber = parseInt($("input#number").val());
+
+    $("#results").append("<li>" + inputtedNumber + "<\/li");
+
+
+
+
   });
 });
