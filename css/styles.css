@@ -1,3 +1,9 @@
 input {
-  text-align: center
+  text-align: center;
+  font-weight: bold;
+}
+
+#result {
+  font-size: 60px;
+  color: black;
 }
