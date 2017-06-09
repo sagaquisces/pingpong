@@ -27,12 +27,18 @@ $(document).ready (function() {
 
     var pingpongArray = makePPArray(inputtedNumber);
 
-    $("#results").empty();
+    // for(i=0;i<pingpongArray.length;i++) {
+    //   alert ("let's fill");
+    //   $("#result").html(pingpongArray[i]);
+    //   alert ("filled");
+    // }
 
-    for(i=0;i<pingpongArray.length;i++) {
-
-      $("#results").append("<li>" + pingpongArray[i] + "<\/li>");
+    var count = 0;
+    function pingpongSequence() {
+      $("#result").text(pingpongArray[count]);
+      count < pingpongArray.length ? count++ : clearInterval(pingpongSequence);
     }
+    setInterval(pingpongSequence, 1000);
 
 
 
