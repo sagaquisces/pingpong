@@ -1,9 +1,23 @@
 // business interface logic
+// var makePPArray = function(n) {
+//   var pingpongArray = [];
+//   for (i=1; i<=n; i++) {
+//     pingpongArray.push(i);
+//   }
+//   return pingpongArray;
+// };
+
 var makePPArray = function(n) {
   var pingpongArray = [];
+
   for (i=1; i<=n; i++) {
-    pingpongArray.push(i);
+    if (i === 3) {
+      pingpongArray.push("ping");
+    } else {
+      pingpongArray.push(i);
+    }
   }
+
   return pingpongArray;
 };
 
