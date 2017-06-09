@@ -11,7 +11,7 @@ A web page that accepts a number from a user and returns a range of number from 
 |It can count up to provided number.|2|[1,2]|
 |It can count up to provided number, replacing three with ping|6|[1,2,"ping"]|
 |It can count up to provided number, replacing five with pong|5|[1,2,"ping",4,"pong"]|
-|It can count up to provided number, replacing 15 with "pong"|15|[1,2,"ping",4,"pong",6,7,8,9,10,11,12,13,14,"ping-pong"]|
+|It can count up to provided number, replacing 15 with "ping-pong"|15|[1,2,"ping",4,"pong",6,7,8,9,10,11,12,13,14,"ping-pong"]|
 |It can count up to provided number, replacing MULTIPLES of three with ping, except when multiple of 15|15|[1,2,"ping",4,"pong","ping",7,8,"ping",10,11,"ping",13,14,"ping-pong"]|
 |It can count up to provided number, replacing MULTIPLES of five with pong, except when multiple of 15|15|[1,2,"ping",4,"pong","ping",7,8,"ping","pong",11,"ping",13,14,"ping-pong"]|
 

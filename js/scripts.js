@@ -13,8 +13,10 @@ var makePPArray = function(n) {
   for (i=1; i<=n; i++) {
     if (i === 3) {
       pingpongArray.push("ping");
-    } else  if (i === 5) {
+    } else if (i === 5) {
       pingpongArray.push("pong");
+    } else if (i === 15) {
+      pingpongArray.push("ping-pong");
     } else {
       pingpongArray.push(i);
     }
