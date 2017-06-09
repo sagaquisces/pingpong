@@ -2,29 +2,56 @@
 <html>
   <head>
     <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+    <link href="css/cover.css" rel="stylesheet" type="text/css">
     <link href="css/styles.css" rel="stylesheet" type="text/css">
     <script src="js/jquery-3.2.1.js"></script>
     <script src="js/scripts.js"></script>
     <title>Ping-Pong</title>
   </head>
   <body>
-    <div class="container">
-      <h1>Ping-Pong</h1>
+    <div class="site-wrapper">
 
-      <form>
-        <div class="form-group">
-          <label for="number">Enter a number, and I will count from that 1 to that number, ping-ponging all the way:</label>
-          <input id="number" type="text">
-        </div>
-        <button type="submit" class="btn">Ping-Pong!</button>
-      </form>
+      <div class="site-wrapper-inner">
 
-      <div id="result">
-        <!-- <ul id = "results">
-        </ul> -->
-        something
-      </div> <!-- end id result -->
+        <div class="cover-container">
 
-    </div>
+          <div class="inner cover">
+            <h1 class="cover-heading">Ping-Pong</h1>
+
+            <form>
+              <p class="lead">Enter a number, and I will count from 1 to that number, ping-ponging all the way:</p>
+              <div class="form-group row">
+                <div class="col-xs-5"></div>
+                <div class="col-xs-2">
+                  <input class="form-control form-control-lg" id="number" type="text">
+                </div>
+                <div class="col-xs-5"></div>
+              </div>
+              <button type="submit" class="btn btn-lg btn-primary">Ping-Pong!</button>
+            </form>
+
+            <!-- <div class="row">
+              <hr>
+              <div class="col-xs-2"></div>
+              <div class="col-xs-8">
+
+
+                <div class="panel panel-default">
+                  <div class="panel-body"><span id="result">A Basic Panel</span></div>
+                </div>
+
+              </div>
+              <div class="col-xs-2"></div>
+            </div> -->
+
+            <hr>
+            <div id="result">Wait for it!</div>
+
+          </div> <!-- end of inner-cover -->
+        </div> <!-- end of cover-container -->
+
+      </div> <!-- end of site-wrapper-inner -->
+
+    </div> <!-- end of site-wrapper -->
   </body>
 </html>

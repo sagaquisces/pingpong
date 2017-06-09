@@ -5,5 +5,26 @@ input {
 
 #result {
   font-size: 60px;
-  color: black;
+  color: orange;
+  text-shadow: 2px 2px #ff0000;
+}
+
+.ping, .pong {
+  background-image: url(../img/sun.png), url(a../img/sun.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.ping {
+  background-position: left center;
+}
+
+.pong {
+  background-position: right center;
+}
+
+.ping_pong {
+  background-image: url(../img/fireworks.png);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
 }

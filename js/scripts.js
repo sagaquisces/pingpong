@@ -35,10 +35,23 @@ $(document).ready (function() {
 
     var count = 0;
     function pingpongSequence() {
+      if (pingpongArray[count] === "0") {
+        $( "#result" ).removeClass( "ping pong ping_pong" );
+      }
+
+      if (pingpongArray[count] === "ping") {
+        $( "#result" ).addClass( "ping" ).removeClass("pong ping_pong");
+      }
+      if (pingpongArray[count] === "pong") {
+        $( "#result" ).addClass( "pong" ).removeClass("ping ping_pong");
+      }
+      if (pingpongArray[count] === "ping-pong") {
+        $( "#result" ).addClass( "ping_pong" ).removeClass("pong ping");
+      }
       $("#result").text(pingpongArray[count]);
       count < pingpongArray.length ? count++ : clearInterval(pingpongSequence);
     }
-    setInterval(pingpongSequence, 1000);
+    setInterval(pingpongSequence, 500);
 
 
 
